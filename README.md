@@ -1,2 +1,2 @@
-# Weather ForeCast webApp 
+# Weather ForeCast WebApp 
 This is an Interactive app build using techniques such as ata analysis and data visualization for weather forecasting app.
