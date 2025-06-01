@@ -1,19 +1,19 @@
-# 🌤️ Weather Forecast Dashboard
+# Weather Forecast Dashboard
 
 A user-friendly Streamlit web app to view weather forecasts (temperature and sky conditions) for the next few days using the [OpenWeatherMap API](https://openweathermap.org/forecast5).
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 ### Sky Forecast View
-![Sky forecast for the next 3 days in magdeburg](./images/sky_forecast_screenshot.png)
+![Sky forecast for the next 3 days in magdeburg](./images/sky_forecast_screenshot.PNG)
 
 ### Temperature Forecast View
-![Temperature forecast for the next 3 days in magdeburg](./images/temperature_forecast_screenshot.png)
+![Temperature forecast for the next 3 days in magdeburg](./images/temperature_forecast_screenshot.PNG)
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🌍 Input any city name to get weather data
 - 📅 Choose forecast range from 1 to 5 days
@@ -23,21 +23,21 @@ A user-friendly Streamlit web app to view weather forecasts (temperature and sky
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-### 📁 `main.py`
+### `main.py`
 - Streamlit-based frontend
 - Gets user input (place, forecast days, data type)
 - Calls backend for forecast data
 - Displays either a temperature chart or sky condition icons
 
-### 🔁 `backend.py`
+### `backend.py`
 - Uses `requests` to fetch weather data from OpenWeatherMap
 - Filters forecast data based on user selection
 
 ---
 
-## 🖼️ Weather Icons Used
+## Weather Icons Used
 
 | Condition | Icon      |
 |----------|-----------|
@@ -48,7 +48,7 @@ A user-friendly Streamlit web app to view weather forecasts (temperature and sky
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -66,26 +66,24 @@ pip install -r requirements.txt
 ```bash
 streamlit run main.py
 ```
-## 🔑 API Key Setup
+## API Key Setup
 Get a free API key from OpenWeatherMap and replace it in backend.py:
 
 ```python
 API_KEY = "your_api_key_here"
 ```
-## 🔗 Related Project: Weather Data REST API
+## Related Project: Weather Data REST API
 Check out the Weather Data REST API built with Flask for historical weather records.
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/mihirpatil37/app_6_your_weather_api.git
 cd app_6_your_weather_api
 pip install flask pandas
 python app.py
-📂 Project Structure
-css
-Copy
-Edit
+```
+
+## Project Structure
+```css
 weather_dashboard/
 ├── main.py
 ├── backend.py
@@ -97,5 +95,4 @@ weather_dashboard/
 │   ├── snow.png
 │   ├── sky_forecast_screenshot.png
 │   └── temperature_forecast_screenshot.png
-📬 License
-This project is licensed under the MIT License.
+```
